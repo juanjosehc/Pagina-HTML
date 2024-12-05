@@ -1,0 +1,363 @@
+/* 
+Elemento	Color	Código Hexadecimal
+Fondo de la Página	Blanco	#FFFFFF
+Color Secundario	#ede5cf
+ARREGLO #ede5cf
+Color Titulos #614f3f
+ARREGLO #614f3f
+Color Subtitulos #dc6366
+ARREGLO #dc6366
+Color Terciario #f3e4c8
+ARREGLO #f3e4c8
+Color Cuarteario #fae2b2 
+ARREGLO #fae2b2
+Color cuadros #fbf9ef
+ARREGLO #fbf9ef
+Color cuadros2 #ffcb6b
+ARREGLO #ffcb6b
+Texto #707070
+Imagenes #eaccb9
+*/
+
+/* Fuentes utilizadas */
+@font-face{
+    font-family: titulos1;
+    src: url(fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: titulos2;
+    src: url(fonts/Oswald/static/Oswald-Regular.ttf);
+}
+@font-face{
+    font-family: subtitulos2;
+    src: url(fonts/Oswald/static/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: prueba;
+    src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.infousuario {
+    text-align: center;
+    font-size: 20px;
+}
+.recuadro {
+    background-color: #F5F5F5;
+    border-color: #BDBDBD ; 
+    
+}
+.videoposter {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.subtitulos {
+    font-family: titulos2;
+    color: #dc6366;
+    font-size: 70px;
+}
+.subtitulos2 {
+    font-family: subtitulos2;
+    font-size: 30;
+}
+
+.encabezado {
+    background-color: #ede5cf;
+    height: 290px;
+    
+}
+.tablaproductos {
+    border-collapse: collapse;
+    width: 44%;
+    margin: 0 auto ;
+    font-size: 24px;
+}
+.thproductos {
+    background-color:#ffcb6b ;
+}
+.thproductos, .tdproductos {
+    border: 1px solid black;
+    padding: 4px;
+}
+.tdproductos {
+    background-color: #fbf9ef;
+}
+.iframes {
+    display: flex
+    justify-content center;
+    position: relative;
+}
+.iframes::before {
+    content: "";
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; 
+    height: 200px;
+    background-image: url(images/vogue.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; left: 580px;
+    border-radius: 50%; 
+}
+.iframes::after {
+    content: ""; 
+    position: absolute;
+    bottom: 446px;; 
+    left: 50%;
+    transform: translateX(-50%);
+    width:300px; 
+    height: 300px;
+    background-image: url(images/primor.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; left: 1250px;
+    border-radius: 50%; 
+}
+.cuadrocompras {
+    display: flex;
+    gap: 20px;
+}
+.imagencompra {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #eaccb9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    left: 530px;
+}
+#primertitulo {
+    text-align: center;
+    font-family: prueba;
+    color: #614f3f;
+    font-size: 1500%;
+}
+#nombre {
+    position: relative; 
+    left: 3px;
+}
+#cedula {
+    position: relative; 
+    left:7px;
+}
+#correo {
+    position: relative; 
+    right: 44px;
+}
+#telefono {
+    position: relative; 
+    left: 1px;
+}
+#nombrecuadro {
+    position: relative; 
+    left: 3px;
+}
+#cedulacuadro {
+    position: relative;
+    left: 7px;
+}
+#correocuadro {
+    position: relative; 
+    right: 44px;
+}
+#telefonocuadro {
+    position: relative; 
+    left: 1px;
+}
+#iframe1 {
+    margin-right: 15px;
+    border: 8px solid #ede5cf;
+    border-top: 100px solid #ede5cf;
+}
+#iframe2 {
+    margin-right: 15px;
+    border: 8px solid #ede5cf;
+    border-top: 100px solid #ede5cf;
+}
+#primerdiv {
+    margin-top: 40px;
+}
+#titulotabla {
+    color: #614f3f;
+    font-family: titulos2;
+    font-size: 50px;
+}
+#productotitulo {
+    margin-bottom: 3px; 
+    margin-top: 15px;
+}
+#shampootitulo {
+    font-size: 40px;
+    color: #dc6366;
+}
+#Producto_ShampooHM {
+    position: relative;
+    bottom: 5px;
+    right: 245px;
+    transform: scale(1.9);
+}
+#titulohys {
+    font-size: 30px;
+    position: relative;
+    right: 255px;
+    color: #614f3f
+}
+#tituloego {
+    font-size: 30px;
+    position: relative;
+    right: 1px;
+    color: #614f3f;
+}
+#Producto_ShampooEgoM {
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    transform: scale(1.9);
+}
+#titulonatura {
+    font-size: 30px;
+    position: relative;
+    right: 190px;
+    color: #614f3f;
+}
+#titulomoco {
+    font-size: 30px;
+    position: relative;
+    left: 42px;
+    color: #614f3f;
+}
+#Producto_ShampooNatuF {
+    position: relative;
+    bottom: 3px;
+    right: 185px;
+    transform: scale(1.9); 
+}
+#Producto_ShampooMocoM {
+    position: relative;
+    bottom: 3px;
+    left: 48px;
+    transform: scale(1.9);
+}
+#perfumestitulo{
+    font-size: 40px;
+    color: #dc6366;
+}
+#tituloone {
+    font-size: 30px;
+    position: relative;
+    right: 180px;
+    color: #614f3f;
+}
+#titulopaco {
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    color: #614f3f;
+}
+#Producto_PerfumeOneM {
+    position: relative;
+    bottom: 3px;
+    right: 175px;
+    transform: scale(1.9); 
+}
+#Producto_PerfumePacoM {
+    position: relative;
+    bottom: 3px;
+    left: 25px;
+    transform: scale(1.9);
+}
+#titulovic {
+    font-size: 30px;
+    position: relative;
+    right: 175px;
+    color: #614f3f;
+}
+#titulomiss {
+    font-size: 30px;
+    position: relative;
+    right: 30px;
+    color: #614f3f;
+}
+#Producto_PerfumeVicF {
+    position: relative;
+    bottom: 3px;
+    right: 168px;
+    transform: scale(1.9); 
+}
+#Producto_PerfumeMissF {
+    position: relative;
+    bottom: 3px;
+    right: 23px;
+    transform: scale(1.9);
+}
+#titulorexona {
+    font-size: 30px;
+    position: relative;
+    right: 195px;
+    color: #614f3f;
+}
+#Producto_DesodoranteRexM {
+    position: relative;
+    bottom: 3px;
+    right: 190px;
+    transform: scale(1.9);
+}
+#tituloarden {
+    font-size: 30px;
+    position: relative;
+    right: 5px;
+    color: #614f3f;
+}
+#Producto_DesodoranteArdenM {
+    position: relative;
+    bottom: 3px;
+    left: 1px;
+    transform: scale(1.9);
+}
+#desodorantetitulo {
+    font-size: 40px;
+    color: #dc6366;
+}
+#titulobalance {
+    font-size: 30px;
+    position: relative;
+    right: 140px;
+    color: #614f3f;
+}
+#titulolady {
+    font-size: 30px;
+    position: relative;
+    left: 48px;
+    color: #614f3f;
+}
+#Producto_DesodoranteBalanceF {
+    position: relative;
+    bottom: 3px;
+    right: 135px;
+    transform: scale(1.9);
+}
+#Producto_DesodoranteLadyF {
+    position: relative;
+    bottom: 3px;
+    left: 53px;
+    transform: scale(1.9);
+}

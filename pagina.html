@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h1 class="encabezado" id="primertitulo">Tienda de Productos</h1>
+<body>
+    <form>
+        <!--........................ DATOS DEL USUARIO ........................X-->
+        <div id="primerdiv" class="infousuario">
+            <b id="nombre">Nombre:</b> <input type="text" class="recuadro" id="nombrecuadro" name="Nombre">
+        </div>
+        <br>
+        <div class="infousuario">
+            <b id="cedula">Cédula:</b> <input type="text" class="recuadro" id="cedulacuadro" name="Cedula">
+        </div class="infousuario">
+        <br>
+        <div class="infousuario">
+            <b id="correo">Correo Electrónico:</b> <input type="text" class="recuadro" id="correocuadro" name="Correo">
+        </div class="infousuario">
+        <br>
+        <div class="infousuario">
+            <b id="telefono">Teléfono:</b> <input type="number" class="recuadro" id="telefonocuadro" name="Telefono">
+        </div>
+        <br>
+        <div>
+            <b class="subtitulos">Género:</b>
+        </div>
+        <div>
+            <label>
+                <b>Mujer</b>
+                <input type="radio" class="genero" name="uno">
+            </label>
+            <label>
+                <b>Hombre</b>
+                <input type="radio" class="genero" name="uno">
+            </label>
+        </div>
+        <br>
+        <br>
+        <!--........................ TABLA ........................-->
+        <div id="tabla">
+            <table class="tablaproductos">
+                <tr>
+                    <th class="thproductos" colspan="6"><b id="titulotabla">Tabla de Productos</b></th>
+                </tr>
+                <tr>
+                    <td class="tdproductos" colspan="2">Shampoo</td>
+                    <td class="tdproductos" colspan="2">Perfume</td>  
+                    <td class="tdproductos" colspan="2">Desodorante</td>
+                </tr>
+                <tr>
+                    <td class="tdproductos">Masculino</td>
+                    <td class="tdproductos">Femenino</td>
+                    <td class="tdproductos">Masculino</td>
+                    <td class="tdproductos">Femenino</td>
+                    <td class="tdproductos">Masculino</td>
+                    <td class="tdproductos">Femenino</td>
+                </tr>
+                <tr>
+                    <td class="tdproductos" rowspan="2">-Shampoo H&S<br>-Shampoo EGO</td>
+                    <td class="tdproductos" rowspan="2">-Shampoo Natura<br>-Shampoo Moco de Gorila</td>
+                    <td class="tdproductos" rowspan="2">-Perfume OneMillion<br>-Perfume Paco Rabanne</td>
+                    <td class="tdproductos" rowspan="2">-Perfume Victoria's Secret<br>-Perfume Miss Dior</td>
+                    <td class="tdproductos" rowspan="2">-Desodorante Rexona<br>-Desodorante Arden</td>
+                    <td class="tdproductos" rowspan="2">-Desodorante Balance<br>-Desodorante Lady Speed Stick</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <!--........................ VIDEOS E IFRAMES ........................-->
+        <div>
+            <h2 class="subtitulos" style="margin-bottom: 1%;">Videos de los Productos</h2>    
+        </div>
+        <div>
+            <video class="videoposter" src="videos/hysvideo.mp4" width="600" height="auto" poster="images/hys logo video.png" controls></video>
+            <video class="videoposter" src="videos/egovideo.mp4" width="600" height="auto" poster="images/ego logo.png" controls></video>
+        </div>
+        <div>
+            <video class="videoposter" src="videos/onevideo.mp4" width="600" height="auto" poster="images/paco logo video.png" controls></video>
+            <video class="videoposter" src="videos/rexonavideo.mp4" width="600" height="auto" poster="images/rexona logo video.png" controls></video>
+        </div>
+        <br>
+        <div>
+            <h2 class="subtitulos">Recomendaciones</h2>
+        </div>
+        <div class="iframes">
+            <iframe id="iframe1" src="https://www.vogue.mx/belleza/articulo/perfumes-para-hombre" width="650" height="650" title="Recomendaciones Vogue para Perfumes"></iframe>
+            <iframe id="iframe2" src="https://www.primor.eu/blog/mejores-champus-profesionales/" width="650" height="650" title="Recomendaciones para Shampoo"></iframe>
+        </div>
+        <!--........................ PRODUCTOS ........................-->
+        <div>
+            <h1 class="subtitulos" id="productostitulo">Productos</h1>
+        </div>
+        <div>
+            <h2 class="subtitulos2" id="shampootitulo">Shampoo</h2>
+        </div>
+        <div>
+            <label for="Producto_ShampooHM";>
+                <b class="subtitulos2" id="titulohys">Shampoo H&S</b>
+                <input type="checkbox" id="Producto_ShampooHM" name="Producto">
+                 
+            </label>
+            <label>
+                <b class="subtitulos2" id="tituloego">Shampoo EGO</b>
+                <input type="checkbox" id="Producto_ShampooEgoM" name="Producto">
+            </label>
+        </div>
+        <div class="cuadrocompras">
+            <img class="imagencompra" src="images/HyS-Shampoo.png" alt="Shampoo H&S" style="width: 400px; height: auto;">
+            <img class="imagencompra" src="images/Ego-Shampoo.png" alt="Shampoo EGO" style="width: 400px; height: auto;">
+        </div>
+        <br>
+        <div>
+            <label>
+                <b class="subtitulos2" id="titulonatura">Shampoo Natura</b>
+                <input type="checkbox" id="Producto_ShampooNatuF" name="Producto">
+            </label>
+            <label>
+                <b class="subtitulos2" id="titulomoco">Shampoo Moco de Gorila</b>
+                <input type="checkbox" id="Producto_ShampooMocoM" name="Producto">
+            </label>
+        </div>
+        <div class="cuadrocompras">
+            <img class="imagencompra" src="images/Natura Shampoo.png" alt="Shampoo Natura" style="width: 400px; height: auto;">
+            <img class="imagencompra" src="images/Moco-Shampoo.png" alt="Shampoo Moco de Gorila" style="width: 400px; height: auto;">
+        </div>
+        <div>
+            <h2 class="subtitulos2" id="perfumestitulo">Perfumes</h2>
+        </div>
+        <div>
+            <label>
+                <b class="subtitulos2" id="tituloone">Perfume OneMillion</b>
+                <input type="checkbox" id="Producto_PerfumeOneM" name="Producto">
+            </label>
+            <label>
+                <b class="subtitulos2" id="titulopaco">Perfume Paco Rabanne</b>
+                <input type="checkbox" id="Producto_PerfumePacoM" name="Producto">
+            </label>
+        </div>
+        <div class="cuadrocompras">
+            <img class="imagencompra" src="images/One-Perfume.png" alt="Perfume OneMillion" style="width: 400px; height: auto;">
+            <img class="imagencompra" src="images/Paco-Perfume.png" alt="Perfume Paco Rabanne" style="width: 400px; height: auto;">
+        </div>
+        <div>
+            <label>
+                <b class="subtitulos2" id="titulovic">Perfume Victoria's Secret</b>
+                <input type="checkbox" id="Producto_PerfumeVicF" name="Producto"> 
+            </label>
+            <label>
+                <b class="subtitulos2" id="titulomiss">Perfume Miss Dior</b>
+                <input type="checkbox" id="Producto_PerfumeMissF" name="Producto">
+            </label>
+        </div>
+        <div class="cuadrocompras">
+            <img class="imagencompra" src="images/Victoria-Perfume.png" alt="Perfume Victoria's Secret" style="width: 400px; height: auto;">
+            <img class="imagencompra" src="images/Miss Dior Perfume.png" alt="Perfume Miss Dior" style="width: 400px; height: auto;">
+        </div>
+        <div>
+            <h2 class="subtitulos2" id="desodorantetitulo">Desodorante</h2>
+        </div>
+        <div>
+            <label>
+                <b class="subtitulos2" id="titulorexona">Desodorante Rexona</b>
+                <input type="checkbox" id="Producto_DesodoranteRexM" name="Producto">
+            </label>
+            <label>
+                <b class="subtitulos2" id="tituloarden">Desodorante Arden</b>
+                <input type="checkbox" id="Producto_DesodoranteArdenM" name="Producto">
+            </label>
+        </div>
+        <div class="cuadrocompras">
+            <img class="imagencompra" src="images/Deso-Rexona.png" alt="Desodorante Rexona" style="width: 400px; height: auto;">
+            <img class="imagencompra" src="images/Deso Arden.png" alt="Desodorante Arden" style="width: 400px; height: auto;">
+        </div>
+        <div>
+            <label>
+                <b class="subtitulos2" id="titulobalance">Desodorante Balance</b>
+                <input type="checkbox" id="Producto_DesodoranteBalanceF" name="Producto">
+            </label>
+            <label>
+                <b class="subtitulos2" id="titulolady">Desodorante Lady Speed Stick</b>
+                <input type="checkbox" id="Producto_DesodoranteLadyF" name="Producto">
+            </label>
+        </div>
+        <div class="cuadrocompras">
+            <img class="imagencompra" src="images/Deso-Balance.png" alt="Desodorante Balance" style="width: 400px; height: auto;">
+            <img class="imagencompra" src="images/Deso-Lady.png" alt="Desodorante Lady" style="width: 400px; height: auto;">
+        </div>
+        <br>
+        <div>
+            <h2>Percepción del Producto</h2>
+        </div>
+        <div>
+            <b>Protección contra el Sudor (1 - Pésimo, 10 - Excelente)</b>
+        </div>
+        <div>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td colspan="3">
+                        <input type="range" min="0" max="10" step="1" value="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left"><b>0</b></td>
+                    <td align="right"><b>10</b></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <b>Aroma del Perfume (1 - Suave, 10 - Fuerte)</b>
+        </div>
+        <div>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td colspan="3">
+                        <input type="range" min="0" max="10" step="1" value="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left"><b>0</b></td>
+                    <td align="right"><b>10</b></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <b>Olor del Shampoo (1 - Desagradable, 10 - Agradable)</b>
+        </div>
+            
+        <div>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td colspan="3">
+                        <input type="range" min="0" max="10" step="1" value="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left"><b>0</b></td>
+                    <td align="right"><b>10</b></td>
+                </tr>
+            </table>
+        </div>
+        <!--........................ CALIFICACIÓN ........................-->
+        <br>
+        <div>
+            <b>Calificación Calidad</b>
+        </div>
+        <div>
+            <label>
+                Excelente
+                <input type="radio" id="Calificación_Excelente" name="Calificacion">
+            </label>
+        </div>
+        <div>
+            <label>
+                Bueno
+                <input type="radio" id="Calificación_Bueno" name="Calificacion">
+            </label>
+        </div>
+        <div>
+            <label>
+                Regular
+                <input type="radio" id="Calificación_Regular" name="Calificacion">
+            </label>
+        </div>
+        <div>
+            <label>
+                Malo
+                <input type="radio" id="Calificación_Malo" name="Calificacion">
+            </label>
+        </div>
+        <br>
+        <b>Características a Destacar</b>
+        <div>
+            <label>
+                Calidad de los Productos
+                <input type="checkbox" id="Caracteristicas_Calidad" name="Caracteristicas">
+            </label>
+        </div>
+        <div>
+            <label>
+                Precio Accesible
+                <input type="checkbox" id="Caracteristicas_Precio" name="Caracteristicas">
+            </label>
+        </div>
+        <div>
+            <label>
+                Variedad de Productos
+                <input type="checkbox" id="Caracteristicas_Variedad" name="Caracteristicas">
+            </label>
+        </div>
+        <div>
+            <label>
+                Atención al Cliente
+                <input type="checkbox" id="Caracteristicas_Atencion" name="Caracteristicas">
+            </label>
+        </div>
+        <br>
+        <div>
+            <h2>Sube videos o fotos de tu producto</h2>
+        </div>
+        <div>
+            <input type="file" name="media" accept="image/*, video/*" multiple>
+        </div>
+        <br>
+        <div>
+            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/261d.svg" style="position: relative; left: 100px; bottom: 13px;" width="50" height="auto">
+            <b>Presiona este botón para compartir tu producto comprado!</b>
+        </div>
+        
+        <br>
+        <div>
+            <b>Sugerencias y Opiniones</b>       
+        </div>
+        <div>
+            <label>
+                <textarea id="Sugerencias" name="Sugerencias"></textarea>
+            </label>
+        </div>
+        <br>
+        <div>
+            <b>Satisfacción</b>
+        </div>
+        <div>
+            <label>
+                <select name="satisfaccion" id="satisfaccion">
+                    <option value="muysatisfecho">Muy satisfecho</option>
+                    <option value="satisfecho">Satisfecho</option>
+                    <option value="indiferente">Indiferente</option>
+                    <option value="insatisfecho">insatisfecho</option>
+                    <option value="muyinsatisfecho">Muy insatisfecho</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <b>¿Volverías a Comprar aquí?</b>       
+        </div>
+        <div>
+            <label>
+                Si
+                <input type="radio" name="Interes">
+            </label>
+        </div>
+        <div>
+            <label>
+                No
+                <input type="radio" name="Interes">
+            </label>
+        </div>
+        <br>
+        <div>
+            <b>Fecha en la que se realizó el Formulario</b>
+        </div>
+        <div>
+            <input type="date" name="Fecha" style="width: 140px; height: 20px; font-size: 18px" >
+        </div>
+    </form>
+        <br>
+        <div>
+            <button type="submit">Registrar</button>
+            <button type="button" onclick="location.reload();">Cancelar</button> 
+        </div>
+</body>
+</html>
