@@ -7,41 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <h1 class="encabezado" id="primertitulo">Tienda de Productos</h1>
-<body>
-    <form>
-        <!--........................ DATOS DEL USUARIO ........................X-->
-        <div id="primerdiv" class="infousuario">
-            <b id="nombre">Nombre:</b> <input type="text" class="recuadro" id="nombrecuadro" name="Nombre">
-        </div>
-        <br>
-        <div class="infousuario">
-            <b id="cedula">Cédula:</b> <input type="text" class="recuadro" id="cedulacuadro" name="Cedula">
-        </div class="infousuario">
-        <br>
-        <div class="infousuario">
-            <b id="correo">Correo Electrónico:</b> <input type="text" class="recuadro" id="correocuadro" name="Correo">
-        </div class="infousuario">
-        <br>
-        <div class="infousuario">
-            <b id="telefono">Teléfono:</b> <input type="number" class="recuadro" id="telefonocuadro" name="Telefono">
-        </div>
-        <br>
-        <div>
-            <b class="subtitulos">Género:</b>
-        </div>
-        <div>
-            <label>
-                <b>Mujer</b>
-                <input type="radio" class="genero" name="uno">
-            </label>
-            <label>
-                <b>Hombre</b>
-                <input type="radio" class="genero" name="uno">
-            </label>
-        </div>
-        <br>
-        <br>
+<header>
+    <div class="divbotones">
+        <a href="pagina.html" class="botones">Inicio</a>
+        <a href="#productostitulo" class="botones" >Productos</a>
+        <a href="calificacion.html" class="botones">Calificación</a>
+    </div>
+</header>
+<body>  
         <!--........................ TABLA ........................-->
+        <br>
         <div id="tabla">
             <table class="tablaproductos">
                 <tr>
@@ -190,179 +165,15 @@
             <img class="imagencompra" src="images/Deso-Balance.png" alt="Desodorante Balance" style="width: 400px; height: auto;">
             <img class="imagencompra" src="images/Deso-Lady.png" alt="Desodorante Lady" style="width: 400px; height: auto;">
         </div>
-        <br>
-        <div>
-            <h2>Percepción del Producto</h2>
-        </div>
-        <div>
-            <b>Protección contra el Sudor (1 - Pésimo, 10 - Excelente)</b>
-        </div>
-        <div>
-            <table style="margin: 0 auto;">
-                <tr>
-                    <td colspan="3">
-                        <input type="range" min="0" max="10" step="1" value="5">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="left"><b>0</b></td>
-                    <td align="right"><b>10</b></td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <b>Aroma del Perfume (1 - Suave, 10 - Fuerte)</b>
-        </div>
-        <div>
-            <table style="margin: 0 auto;">
-                <tr>
-                    <td colspan="3">
-                        <input type="range" min="0" max="10" step="1" value="5">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="left"><b>0</b></td>
-                    <td align="right"><b>10</b></td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <b>Olor del Shampoo (1 - Desagradable, 10 - Agradable)</b>
-        </div>
-            
-        <div>
-            <table style="margin: 0 auto;">
-                <tr>
-                    <td colspan="3">
-                        <input type="range" min="0" max="10" step="1" value="5">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="left"><b>0</b></td>
-                    <td align="right"><b>10</b></td>
-                </tr>
-            </table>
-        </div>
-        <!--........................ CALIFICACIÓN ........................-->
-        <br>
-        <div>
-            <b>Calificación Calidad</b>
-        </div>
-        <div>
-            <label>
-                Excelente
-                <input type="radio" id="Calificación_Excelente" name="Calificacion">
-            </label>
-        </div>
-        <div>
-            <label>
-                Bueno
-                <input type="radio" id="Calificación_Bueno" name="Calificacion">
-            </label>
-        </div>
-        <div>
-            <label>
-                Regular
-                <input type="radio" id="Calificación_Regular" name="Calificacion">
-            </label>
-        </div>
-        <div>
-            <label>
-                Malo
-                <input type="radio" id="Calificación_Malo" name="Calificacion">
-            </label>
-        </div>
-        <br>
-        <b>Características a Destacar</b>
-        <div>
-            <label>
-                Calidad de los Productos
-                <input type="checkbox" id="Caracteristicas_Calidad" name="Caracteristicas">
-            </label>
-        </div>
-        <div>
-            <label>
-                Precio Accesible
-                <input type="checkbox" id="Caracteristicas_Precio" name="Caracteristicas">
-            </label>
-        </div>
-        <div>
-            <label>
-                Variedad de Productos
-                <input type="checkbox" id="Caracteristicas_Variedad" name="Caracteristicas">
-            </label>
-        </div>
-        <div>
-            <label>
-                Atención al Cliente
-                <input type="checkbox" id="Caracteristicas_Atencion" name="Caracteristicas">
-            </label>
-        </div>
-        <br>
-        <div>
-            <h2>Sube videos o fotos de tu producto</h2>
-        </div>
-        <div>
-            <input type="file" name="media" accept="image/*, video/*" multiple>
-        </div>
-        <br>
-        <div>
-            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/261d.svg" style="position: relative; left: 100px; bottom: 13px;" width="50" height="auto">
-            <b>Presiona este botón para compartir tu producto comprado!</b>
-        </div>
-        
-        <br>
-        <div>
-            <b>Sugerencias y Opiniones</b>       
-        </div>
-        <div>
-            <label>
-                <textarea id="Sugerencias" name="Sugerencias"></textarea>
-            </label>
-        </div>
-        <br>
-        <div>
-            <b>Satisfacción</b>
-        </div>
-        <div>
-            <label>
-                <select name="satisfaccion" id="satisfaccion">
-                    <option value="muysatisfecho">Muy satisfecho</option>
-                    <option value="satisfecho">Satisfecho</option>
-                    <option value="indiferente">Indiferente</option>
-                    <option value="insatisfecho">insatisfecho</option>
-                    <option value="muyinsatisfecho">Muy insatisfecho</option>
-                </select>
-            </label>
-        </div>
-        <br>
-        <div>
-            <b>¿Volverías a Comprar aquí?</b>       
-        </div>
-        <div>
-            <label>
-                Si
-                <input type="radio" name="Interes">
-            </label>
-        </div>
-        <div>
-            <label>
-                No
-                <input type="radio" name="Interes">
-            </label>
-        </div>
-        <br>
-        <div>
-            <b>Fecha en la que se realizó el Formulario</b>
-        </div>
-        <div>
-            <input type="date" name="Fecha" style="width: 140px; height: 20px; font-size: 18px" >
-        </div>
-    </form>
-        <br>
-        <div>
-            <button type="submit">Registrar</button>
-            <button type="button" onclick="location.reload();">Cancelar</button> 
-        </div>
-</body>
-</html>
+        <footer id="pie">
+            <div class="divfooter">
+                <a href="acerca.html" id="hiperacerca"><l class="footer" id="acercatexto" >Acerca de Nosotros</l></a>
+                <l class="footer" id="contactotexto">Contacto:  </l>
+            </div>
+            <div class="divfooter">
+                <pre id="contacto">
+                                                        +57 3022529918
+                                                                                tiendadeproductos@gmail.com
+                </pre>
+            </div>
+        </footer>

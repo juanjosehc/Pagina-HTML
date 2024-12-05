@@ -73,9 +73,17 @@ body {
     color: #dc6366;
     font-size: 70px;
 }
+.subtitulosc {
+    font-family: titulos2;
+    color: #dc6366;
+    font-size: 45px;
+}
 .subtitulos2 {
     font-family: subtitulos2;
     font-size: 30;
+}
+.textoc {
+    font-family: subtitulos2;
 }
 
 .encabezado {
@@ -146,6 +154,37 @@ body {
     align-items: center;
     border-radius: 8px;
 }
+.botones {
+    font-family: titulos2;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 45px;
+    color: #ede5cf;
+}
+.footer {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #614f3f;
+    
+}
+.divfooter {
+    display: flex; 
+    gap: 1px; 
+    justify-content: center; 
+}
+.imagenes {
+    width: 400px; 
+    height: auto;
+}
+.headerbar {
+    background-color: #58544b
+}
+.divbotones {
+    background-color: #58544b;
+    height: 60px;
+}
 #primertitulo {
     text-align: center;
     font-family: prueba;
@@ -193,9 +232,6 @@ body {
     margin-right: 15px;
     border: 8px solid #ede5cf;
     border-top: 100px solid #ede5cf;
-}
-#primerdiv {
-    margin-top: 40px;
 }
 #titulotabla {
     color: #614f3f;
@@ -361,4 +397,45 @@ body {
     bottom: 3px;
     left: 53px;
     transform: scale(1.9);
+}
+#pie {
+    background-color: #ede5cf;
+    height: 10em;
+    
+}
+#contactotexto{
+    font-family: subtitulos2;
+    margin-bottom: 1px;
+    color: #614f3f;
+}
+#acercatexto {
+    font-family: subtitulos2;
+    margin-bottom: 1px;
+    color: #614f3f;
+}
+#acercanosotros {
+    font-family: subtitulos2;
+    font-size: 30px;
+}
+#acercaescrito {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+
+}
+#contacto {
+    font-family: subtitulos2;
+    color: #614f3f;
+}
+#hiperacerca{
+    text-decoration: none;
+}
+
+.botones:hover{
+    color: #dc6366;
+    text-decoration: underline;
+}
+#acercatexto:hover{
+    color: #dc6366;
+    text-decoration: underline;
 }

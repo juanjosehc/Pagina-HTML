@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h1 class="encabezado" id="primertitulo">Calificación</h1>
+<header>
+    <div class="divbotones">
+        <a href="pagina.html" class="botones">Inicio</a>
+        <a href="calificacion.html" class="botones">Calificación</a>
+    </div>
+</header>
+<body>
+    <div>
+        <h1 class="subtitulosc">Información:</h1>
+    </div>
+    <div class="infousuario">
+        <b id="nombre" class="textoc">Nombre:</b> <input type="text" class="recuadro" id="nombrecuadro" name="Nombre">
+    </div>
+    <br>
+    <div class="infousuario">
+        <b id="cedula" class="textoc">Cédula:</b> <input type="text" class="recuadro" id="cedulacuadro" name="Cedula">
+    </div class="infousuario">
+    <br>
+    <div class="infousuario">
+        <b id="correo" class="textoc">Correo Electrónico:</b> <input type="text" class="recuadro" id="correocuadro" name="Correo">
+    </div class="infousuario">
+    <br>
+    <div class="infousuario">
+        <b id="telefono" class="textoc">Teléfono:</b> <input type="number" class="recuadro" id="telefonocuadro" name="Telefono">
+    </div>
+    <br>
+    
+    <div>
+        <label>
+            <b class="textoc">Mujer</b>
+            <input type="radio" class="genero" name="uno">
+        </label>
+        <label>
+            <b class="textoc">Hombre</b>
+            <input type="radio" class="genero" name="uno">
+        </label>
+    </div>
+    <br>
+        <div>
+            <b class="subtitulosc">Percepción del Producto:</b>
+        </div>
+        <div>
+            <b class="textoc">Protección contra el Sudor (1 - Pésimo, 10 - Excelente)</b>
+        </div>
+        <div>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td colspan="3">
+                        <input type="range" min="0" max="10" step="1" value="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left"><b>0</b></td>
+                    <td align="right"><b>10</b></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <b class="textoc">Aroma del Perfume (1 - Suave, 10 - Fuerte)</b>
+        </div>
+        <div>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td colspan="3">
+                        <input type="range" min="0" max="10" step="1" value="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left"><b>0</b></td>
+                    <td align="right"><b>10</b></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <b class="textoc">Olor del Shampoo (1 - Desagradable, 10 - Agradable)</b>
+        </div>
+            
+        <div>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td colspan="3">
+                        <input type="range" min="0" max="10" step="1" value="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left"><b>0</b></td>
+                    <td align="right"><b>10</b></td>
+                </tr>
+            </table>
+        </div>
+        <!--........................ CALIFICACIÓN ........................-->
+        <br>
+        <div>
+            <b class="subtitulosc">Calificación Calidad</b>
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Excelente</b>
+                <input type="radio" id="Calificación_Excelente" name="Calificacion">
+            </label>
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Bueno</b>
+                <input type="radio" id="Calificación_Bueno" name="Calificacion">
+            </label>
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Regular</b>
+                <input type="radio" id="Calificación_Regular" name="Calificacion">
+            </label>
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Malo</b>
+                <input type="radio" id="Calificación_Malo" name="Calificacion">
+            </label>
+        </div>
+        <br>
+        <b class="subtitulosc">Características a Destacar</b>
+        <div>
+            <label>
+                <b class="textoc">Calidad de los Productos</b>
+                <input type="checkbox" id="Caracteristicas_Calidad" name="Caracteristicas">
+            </label>
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Precio Accesible</b>
+                <input type="checkbox" id="Caracteristicas_Precio" name="Caracteristicas">
+            </label>
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Variedad de Productos</b>
+                <input type="checkbox" id="Caracteristicas_Variedad" name="Caracteristicas">
+            </label>
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Atención al Cliente</b>
+                <input type="checkbox" id="Caracteristicas_Atencion" name="Caracteristicas">
+            </label>
+        </div>
+        <br>
+        <div>
+            <b class="textoc">Sube videos o fotos de tu producto</b>
+        </div>
+        <div>
+            <input type="file" name="media" accept="image/*, video/*" multiple>
+        </div>
+        <br>
+        <div>
+            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/261d.svg" style="position: relative; left: 70px; bottom: 16px;" width="50" height="auto">
+            <b class="textoc">Presiona este botón para compartir tu producto comprado!</b>
+        </div>
+        
+        <br>
+        <div>
+            <b class="subtitulosc">Sugerencias y Opiniones</b>       
+        </div>
+        <div>
+            <label>
+                <textarea id="Sugerencias" name="Sugerencias"></textarea>
+            </label>
+        </div>
+        <br>
+        <div>
+            <b class="textoc">Satisfacción</b>
+        </div>
+        <div>
+            <label>
+                <select name="satisfaccion" id="satisfaccion">
+                    <option value="muysatisfecho">Muy satisfecho</option>
+                    <option value="satisfecho">Satisfecho</option>
+                    <option value="indiferente">Indiferente</option>
+                    <option value="insatisfecho">insatisfecho</option>
+                    <option value="muyinsatisfecho">Muy insatisfecho</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <b class="textoc">¿Volverías a Comprar aquí?</b>       
+        </div>
+        <div>
+            <label>
+                <b class="textoc">Si</b>
+                <input type="radio" name="Interes">
+            </label>
+        </div>
+        <div>
+            <label>
+                </b class="textoc">No<b>
+                <input type="radio" name="Interes">
+            </label>
+        </div>
+        <br>
+        <div>
+            <b class="textoc">Fecha en la que se realizó el Formulario</b>
+        </div>
+        <div>
+            <input type="date" name="Fecha" style="width: 140px; height: 20px; font-size: 18px" >
+        </div>
+    </form>
+        <br>
+        <div>
+            <button type="submit">Registrar</button>
+            <button type="button" onclick="location.reload();">Cancelar</button> 
+        </div>
+</body>
+</html>
+</body>
+</html>
